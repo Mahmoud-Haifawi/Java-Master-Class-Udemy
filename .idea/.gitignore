@@ -1,0 +1,14 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Java / IntelliJ
+.idea/
+*.iml
+*.class
+out/
+target/
+*.log
+*.jar
+*.war
+*.ear
+.DS_Store
