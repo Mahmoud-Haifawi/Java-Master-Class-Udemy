@@ -1,5 +1,7 @@
 package oop.inheritance;
 
+import java.util.Objects;
+
 public class Fish extends Animal {
 
     private int gills;
@@ -23,7 +25,7 @@ public class Fish extends Animal {
     public void move(String speed) {
         super.move(speed);
         moveMuscles();
-        if (speed == "fast") {
+        if (Objects.equals(speed, "fast")) {
             moveBackFin();
         }
         System.out.println();
