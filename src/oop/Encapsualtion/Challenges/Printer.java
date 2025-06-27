@@ -41,19 +41,12 @@ public class Printer {
         return (this.tonerLevel);
 
     }
-    public int printPages(int pages)
-    {
-        this.pagesPrinted+=pages;
-
-        if(this.duplex)
-        {
-            System.out.println("it is a duplex printer");
-            return this.pagesPrinted;
-            }
-        else
-            return this.pagesPrinted;
-
+    public int printPages(int pages) {
+        int jobPages = duplex ? (pages / 2 + pages % 2) : pages;
+        this.pagesPrinted += jobPages;
+        return jobPages;
     }
+
 
     @Override
     public String toString() {
