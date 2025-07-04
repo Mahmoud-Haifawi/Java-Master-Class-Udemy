@@ -18,7 +18,7 @@ public class Main_part2
         var airplane = Movie.getMovie("C", "Airplane");
         airplane.watchMovie(); // Works
        // airplane.watchComedy(); // COMPILATION ERROR - still inferred as Movie
-
+        //
 // Type inferred as Comedy (constructor type)
         var plane = new Comedy("Airplane");
         plane.watchComedy(); // Works - compiler knows it's Comedy
