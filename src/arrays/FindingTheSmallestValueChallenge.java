@@ -7,7 +7,7 @@ public class FindingTheSmallestValueChallenge
 {
     public static void main (String ... args)
     {
-       int [] userInput = readIntegers();
+        int [] userInput = readIntegers();
         System.out.println(Arrays.toString(userInput));
 
         int minvalue = findMin(userInput);
@@ -19,7 +19,7 @@ public class FindingTheSmallestValueChallenge
         Scanner scanner = new Scanner(System.in);
 
         String input = scanner.nextLine();
-        String []arry = input.split(",");
+        String []arry = Arrays.copyOf(input.split(","),input.length()-1);
         int [] intArray= new int [arry.length];
         for (int i = 0; i <arry.length ; i++)
         {
@@ -35,7 +35,7 @@ public class FindingTheSmallestValueChallenge
         for (int i = 0; i <args.length-1 ; i++)
         {
             if(args[i]<min)
-               min=args[i];
+                min=args[i];
 
 
         }
